@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Button from '@mui/material/Button';
 
 export default function About() {
     return (
@@ -11,7 +12,7 @@ export default function About() {
           </p>
         </main>
         <nav>
-          <Link to="/">Go Home</Link>
+          <Link to="/"><Button type="primary">Go Home</Button></Link>
         </nav>
       </>
     );
