@@ -9,6 +9,7 @@ import {
   selectCount,
 } from './counterSlice';
 import styles from './Counter.module.css';
+import { sagaActions } from '../../sagas/sagaActions'
 
 export function Counter() {
   const count = useSelector(selectCount);
@@ -60,6 +61,12 @@ export function Counter() {
           onClick={() => dispatch(incrementIfOdd(incrementValue))}
         >
           Add If Odd
+        </button>
+        <button
+          className={styles.button}
+          onClick={() => dispatch({ type: sagaActions.FETCH_NUMBER_SAGA })}
+        >
+          Add Random number with Saga
         </button>
       </div>
     </div>
