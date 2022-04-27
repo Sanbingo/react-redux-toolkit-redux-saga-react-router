@@ -25,5 +25,5 @@ export function* fetchNumberSaga() {
   }
 }
 export default function* rootSaga() {
-  yield takeEvery(sagaActions.FETCH_NUMBER_SAGA, fetchNumberSaga)
+  yield takeEvery(sagaActions.type, fetchNumberSaga)
 }

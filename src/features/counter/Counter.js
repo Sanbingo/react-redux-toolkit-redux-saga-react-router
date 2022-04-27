@@ -64,7 +64,7 @@ export function Counter() {
         </button>
         <button
           className={styles.button}
-          onClick={() => dispatch({ type: sagaActions.FETCH_NUMBER_SAGA })}
+          onClick={() => dispatch(sagaActions())}
         >
           Add Random number with Saga
         </button>

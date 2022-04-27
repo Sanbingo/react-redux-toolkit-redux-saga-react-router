@@ -1,3 +1,3 @@
-export const sagaActions = {
-    FETCH_NUMBER_SAGA: 'FETCH_NUMBER_SAGA',
-  }
+import { createAction } from "@reduxjs/toolkit"
+
+export const sagaActions = createAction('FETCH_NUMBER_SAGA')
