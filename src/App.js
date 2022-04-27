@@ -6,6 +6,7 @@ import Box from '@mui/material/Box';
 import { Counter } from './features/counter/Counter';
 import Home from './pages/home'
 import About from './pages/about'
+import NoMatch from './pages/404'
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
+          <Route path="*" element={<NoMatch />} />
       </Routes>
     </Box>
   </Container>
