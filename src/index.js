@@ -9,6 +9,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
 import './index.css';
+import './i18n';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
